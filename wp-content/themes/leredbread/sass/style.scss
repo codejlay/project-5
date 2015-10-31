@@ -67,11 +67,104 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 html {
 	// font-family: overlock; 
 	// background-color: red;
+	// background-color: blue;
+}
+
+body {
+	margin: 0 auto;
+	width: 1024px;
+	font-family: open_sans;
+
+
+
+}
+
+.background-image {
+	background-color: red;
 }
 
 .site-branding img {
 	width: 300px;
+
+
 }
+
+.site-branding-inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+
+.social-container {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+
+	i {
+		padding-left: 1rem;
+		// color: green;
+		// align-items: flex-end;
+	}
+}
+
+.main-navigation {
+	// background-color: maroon;
+	display: flex;
+	justify-content: space-between;
+	// border: solid 1px red;
+	border-top: solid 1px silver;
+	border-bottom: solid 1px silver;
+
+	// color: green;
+
+	// button {
+	// 	color: green;
+	// }
+}
+
+.menu-main-container {
+	// display: flex;
+	// justify-content: space-between;	
+	// border: solid 1px red;
+	// align-items: center;
+
+	a {
+		border-left: solid 1px silver;
+		padding: 0 2rem;
+		height: 2rem;
+		color: silver;
+		font-weight: bold;
+
+	}
+
+	#menu-item-46 {
+		border-right: solid 1px silver;
+	}
+}
+
+
+
+li #menu-item-49 {
+	// color: green;
+}
+
+.menu-toggle {
+	// background-color: blue;
+}
+
+.header-search {
+	
+	input {
+		.search-field:focus {
+		outline: 0;
+		}
+	}
+}
+
+
+
 
 .footer-block-container {
 	background-color: black;
