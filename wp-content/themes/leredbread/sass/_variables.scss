@@ -21,8 +21,28 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: "sans-serif";
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// Own setting
+
+// Typography
+$font-main: "open_sans", "sans-serif";
+$font-header: "overlock", "sans-serif";
+$font-size: 16px;
+
+
+// Colors
+$color-background-main: #ffffff;
+$color-off-white: #fafafa;
+$color-brand-red: #db272a;
+$color-brand-brown: #400c0d;
+$color-brand-light-grey: #a1a1a1;
+$color-brand-medium-grey: #808080;
+$color-brand-dark-grey: #333333;
+$color-brand-black: #222222;
+
+

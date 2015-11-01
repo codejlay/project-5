@@ -12,9 +12,14 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-block-container">
 					<div class="contact">
-						<p>Contact</p>
-						<p>info@leredbread.com</p>
-						<p>(555) 343 456 7891</p>
+						<h3>Contact</h3>
+						<p><i class="fa fa-envelope"> <a href="mailto: info@leredbread.com"></i>info@leredbread.com</a></p>
+						<p><i class="fa fa-phone"></i><a href="tel:5553434567891">(555) 343 456 7891</a></p>
+						<p>
+							<span><i class="fa fa-facebook-square"></i></span>
+							<span><i class="fa fa-twitter-square"></i></span>
+							<span><i class="fa fa-google-plus-square"></i></span>
+						</p>
 					</div>
 
 					<div class="footer-logo">
@@ -22,16 +27,18 @@
 					</div>
 
 					<div class="business-hours">
-						<p>Business Hours</p>
-						<p>Monday-Friday: 9am to 5pm</p>
-						<p>Saturday: 10am to 2pm</p>
-						<p>Sunday: Closed</p>
+						<h3>Business Hours</h3>
+						<p><strong>Monday-Friday:</strong> 9am to 5pm</p>
+						<p><strong>Saturday:</strong> 10am to 2pm</p>
+						<p><strong>Sunday:</strong> Closed</p>
 					</div>
-
 				</div>
 
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
+					<div class="copyright-container">
+						<p>Copyright &copy; 2015 Le Red Bread</p>
+					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

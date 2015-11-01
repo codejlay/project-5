@@ -56,6 +56,7 @@
 				
 					<div class="header-search">
 						<input class="search-field" type="search" title="Search for:" name="s" value="" placeholder="SEARCH ..."></input>
+						<button><i class="fa fa-search"></i></button>
 					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
