@@ -715,10 +715,12 @@ object {
 /* Front page */
 body {
   margin: 0 auto;
-  width: 1024px;
   font-family: "open_sans", "sans-serif";
   font-size: 16px;
   padding-top: 2.25rem; }
+
+.main-navigation {
+  width: 100%; }
 
 h1, h2, h3 {
   font-family: "overlock", "sans-serif"; }
@@ -728,6 +730,25 @@ h2 {
 
 h3 {
   font-size: 1.2rem; }
+
+.hero {
+  background: url(../../images/hero-bread.jpg) no-repeat center center;
+  height: 550px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .hero .hero-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: "overlock", "sans-serif"; }
 
 .site-branding {
   padding-bottom: 2rem; }
@@ -796,9 +817,9 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
