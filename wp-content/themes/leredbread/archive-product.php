@@ -6,7 +6,9 @@
  */
 
 get_header(); ?>
-
+	
+	
+<div class="product-grid-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -18,18 +20,44 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+		
+			<section class="product-info-container">
+				<?php
+				$terms = get_terms("product-type");
+				if ($terms) {?>
+				<ul class="product-type">
+					<?php foreach($terms as $term) { ?>
+					<li class="product">
+						<img src="<?php echo get_template_directory_uri() ?>/images/<?php echo $term->slug ?>.png"
+						alt="<?php echo $term->slug ?>">
+						<h3><?php echo $term->name ?></h3>
+						<!-- <p><?php echo $term->description;?>
+							<a href="<?php echo get_term_link( $term ); ?>">See More...</a>
+						</p> -->
+						</li><?php
+					}
+				} ?>
+			</section>
+			
+			<div class="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+			
+				
+				<div class="product-grid-item">
+					<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'small' ); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-				<p class="price">Price: <?php echo esc_html( CFS()->get('price')); ?></p>
-
-			<?php endwhile; ?>
-
+					<div class="product-info">
+						<span class="entry-title"><?php the_title(); ?></span>
+						<?php endif; ?>
+						<span class="product-grid-price"><?php echo esc_html( CFS()->get('price')); ?></span>
+					</div>
+				</div>
+			<!-- .entry-content -->
+		
+	
+<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -37,9 +65,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</div>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

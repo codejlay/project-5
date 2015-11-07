@@ -64,6 +64,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+
+// page templates
+
 html {
 
 }
@@ -71,17 +74,11 @@ html {
 
 body {
 	margin: 0 auto;
-	// width: 1024px;
 	font-family: $font-main;
 	font-size: $font-size;
 	padding-top: 2.25rem;
-	// line-height: base__space-unit;
-	// padding: 0 10%;
 }
 
-.main-navigation {
-	width: 100%
-}
 
 h1, h2, h3 {
 	font-family: $font-header;
@@ -89,7 +86,7 @@ h1, h2, h3 {
 
 
 h1 {
-
+	font-size: 2.1rem;
 }
 
 
@@ -102,8 +99,24 @@ h3 {
 	font-size: 1.2rem;
 }
 
+.container {
+	// max-width: 1024px;
+	// margin: 0 auto;
+
+}
+
+.site-header {
+	// max-width: 1024px;
+	// margin: 0 auto;
+	// background-color: red;
+	// border-bottom: 1px solid #e1e1e1;
+	// background-color: blue;
+
+}
+
 .site-content {
 	// display: flex;
+
 }
 
 .hero {
@@ -113,6 +126,7 @@ h3 {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 3rem;
 
 	.hero-text {
 		color:white;
@@ -124,8 +138,13 @@ h3 {
 
 
 
+// header
+
+
 .site-branding {
 	padding-bottom: 2rem;
+	max-width: 1024px;
+	margin: 0 auto;
 
 	img {
 	width: 300px;
@@ -135,15 +154,15 @@ h3 {
 
 .site-branding-inner {
 		display: flex;
-		flex-direction: row;
+		// flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		// background-color: red;
 	}
 
 
 .social-container {
 	display: flex;
-	flex-direction: row;
 	list-style: none;
 
 	i {
@@ -151,22 +170,41 @@ h3 {
 	}
 }
 
+
 .main-navigation {
-	display: flex;
-	justify-content: space-between;
 	border-top: 1px solid #e1e1e1;
 	border-bottom: 1px solid #e1e1e1;
 	box-shadow: 0 2px 3px #e1e1e1;
+	margin: 0 auto;
+}
+
+
+#navigation {
+	display: inline;
+}
+
+
+.main-navigation-container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 
 .menu-main-container {
 
+
 	a {
 		border-left: solid 1px silver;
 		padding: .75rem 2rem;
-		color: silver;
+		color: $color-brand-medium-grey;
 		font-weight: bold;
+
+	}
+
+	a:hover {
+		color: $color-brand-brown;
 	}
 
 	#menu-item-46 {
@@ -191,6 +229,46 @@ h3 {
 	}
 }
 
+.product-info-container{
+	// display: flex;
+	margin: 0 auto;
+	width: 1024px;
+
+}
+
+
+.product-type {
+	margin: 0 0 3rem 0;
+	display: flex;
+	// flex-direction: column;
+	// width: 80%;
+	list-style: none;
+	justify-content: space-between;
+	// flex: 1;
+	padding: 0;
+
+	h3 {
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+
+.product {
+	width: 22%;
+}
+
+.latest-news-container {
+	display: flex;
+}
+
+
+//footer
+
+.site-footer {
+	background-color: $color-brand-black;
+}
+
 
 .footer-block-container {
 	background-color: $color-brand-black;
@@ -198,6 +276,8 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	color: white;
+	max-width: 1024px;
+	margin: 0 auto;
 
 	h3 {
 		color: $color-brand-medium-grey;
@@ -208,9 +288,8 @@ h3 {
 	.footer-logo img {
 		width: 250px;
 	}
-
-
 }
+
 
 .contact {
 	
@@ -234,12 +313,10 @@ h3 {
 }
 
 
-
-
-
 .business-hours {
 
 }
+
 
 .copyright-container {
 	background-color: $color-brand-dark-grey;
@@ -247,5 +324,183 @@ h3 {
 	font-size: .8rem;
 	text-align: center;
 	padding: 1.5rem;
+}
+
+
+// page.php
+
+// .page-container {
+// 	display: flex;
+// 	margin: 0 auto;
+
+// }
+
+// .content-area {
+// 	width: 70%;
+// 	// background-color: red;
+// }
+
+
+// .sidebar-area {
+// 	width: 30%;
+// 	// background-color: blue;
+
+
+// }
+
+// body.home .content-area {
+// 	width: 100%;
+
+// }
+
+// body.home .sidebar-area {
+// 	width: 0;
+
+// }
+
+
+// about
+
+.about-main-container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+.about-title {
+	text-align: center;
+	// background-color: green;
+}
+
+
+.about-tagline {
+	// background-color: yellow;
+	text-align: center;
+}
+
+.about-content-container {
+	// background-color: red;
+	display: flex;
+	justify-content: space-between;
+	// flex: 0 1 47.5%;
+}
+
+.about-content-left {
+	// background-color: red;
+	flex: 0 1 47.5%;
+}
+
+
+.about-content-right {
+	// background-color: blue;
+	flex: 0 1 47.5%;
+}
+
+
+.about-blurb1-motto {
+	color: 	$color-brand-light-grey;
+}
+
+.about-blurb1 {
+
+}
+
+
+.about-blurb2-motto {
+	color: 	$color-brand-light-grey;
+}
+
+
+.about-blurb2 {
+	
+}
+
+.about-story {
+	line-height: 1rem;
+	
+	h2 {
+	text-align: center;	
+	}
+}
+
+// product-grid
+
+
+
+.product-grid-container {
+	width: 1024px;
+	margin: 0 auto;
+
+	.product-info-container {
+
+		.product-type {
+			width: 60%;
+			margin: 0 auto;
+
+			.product {
+				// width: 10%;
+			}
+		}
+	}
+}
+
+.page-header {
+	// background-color: red;
+	text-align: center;
+}
+
+.product-grid {
+	display: flex;
+	// margin: 0 auto;
+	// align-content: flex-start;
+	// background-color: green;
+	flex-wrap: wrap;
+	margin-bottom: 4.5rem;
+	
+}
+
+.product-grid-item {
+	max-width: 25%;
+	flex: 0 1 25%;
+	// background-color: red;
+	border: 1px solid #e1e1e1;
+	// padding: 1rem;
+	
+
+}
+
+.product-info {
+	// display: flex;
+	// justify-content: space-around;
+	// white-space: nowrap;
+	// padding: 2rem;
+
+	
+	.entry-title {
+		background-color: red;
+		// float: left;
+
+		    white-space: nowrap;
+		    // overflow: hidden;
+    // content: "...................................................";
+	}
+
+	.product-grid-price {
+		// content: "...........................";
+		// overflow: hidden;
+		float: right;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+}
+
+.entry-title:before {
+	float: left;
+	width: 0;
+	white-space: nowrap;
+
+	content: "...........................";	
+
 }
 
