@@ -831,7 +831,8 @@ h3 {
     color: white;
     text-transform: uppercase;
     font-size: 6rem;
-    font-family: "overlock", "sans-serif"; }
+    font-family: "overlock", "sans-serif";
+    text-shadow: 2px 1px 2px rgba(100, 100, 100, 0.75); }
 
 .product-info-container {
   margin: 0 auto;
@@ -861,9 +862,11 @@ h3 {
   padding: 1.5rem;
   margin-bottom: 3rem;
   margin: 0 auto;
+  margin-bottom: 3rem;
   width: 1024px; }
   .call-to-action span {
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    margin-right: 1rem; }
   .call-to-action .btn {
     border: none;
     border-radius: 3px;
@@ -903,6 +906,25 @@ h3 {
               flex: 1 0 25%;
       max-width: 25%;
       list-style: none; }
+
+.decorative {
+  border: none;
+  color: #e1e1e1;
+  margin-bottom: 3rem;
+  max-width: 320px;
+  padding: 0;
+  width: 50%; }
+
+.decorative:after {
+  background: 0 0;
+  content: '\f111';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 14.4px;
+  font-size: .9rem;
+  position: relative;
+  top: -.875em;
+  margin: 0 50%; }
 
 .thumbnail-wrapper {
   height: 200px;
@@ -969,17 +991,6 @@ h3 {
   text-align: center;
   padding: 1.5rem; }
 
-.page-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto; }
-
-.sidebar-area {
-  width: 27%;
-  border-left: solid 1px #e1e1e1;
-  padding-left: 5%; }
-
 body.home .content-area {
   width: 100%; }
 
@@ -991,7 +1002,8 @@ body.home .sidebar-area {
   margin: 0 auto; }
 
 .about-title {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: .5rem; }
 
 .about-tagline {
   text-align: center; }
@@ -1021,9 +1033,12 @@ body.home .sidebar-area {
   color: #a1a1a1; }
 
 .about-story {
-  line-height: 1rem; }
+  line-height: 1rem;
+  margin-bottom: 4.5rem; }
   .about-story h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2.25rem;
+    margin-top: 1rem; }
 
 .product-grid-container {
   width: 1024px;
@@ -1033,7 +1048,10 @@ body.home .sidebar-area {
     margin: 0 auto; }
 
 .page-header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.5rem; }
+  .page-header p {
+    margin-bottom: 3rem; }
 
 .product-grid {
   display: -webkit-flex;
@@ -1065,17 +1083,100 @@ body.home .sidebar-area {
 .entry-title:before {
   float: left;
   width: 0;
-  white-space: nowrap;
-  content: "..........................."; }
+  white-space: nowrap; }
+
+.entry-title {
+  text-transform: uppercase; }
+
+.entry-content h2 {
+  color: #808080; }
+
+.wpcf7-form {
+  color: #808080;
+  font-weight: 700; }
+  .wpcf7-form span {
+    color: #db272a; }
+  .wpcf7-form input, .wpcf7-form textarea {
+    background-color: #fafafa; }
+
+.name {
+  float: left;
+  margin-right: 1%;
+  width: 49%; }
+  .name input {
+    width: 100%; }
+
+.email {
+  float: right;
+  margin-left: 1%;
+  width: 49%; }
+  .email input {
+    width: 100%; }
+
+.subject input {
+  width: 100%; }
+
+input.wpcf7-form-control.wpcf7-submit {
+  border: none;
+  border-radius: 3px;
+  background: #400c0d;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none; }
+
+.page-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.contact-content-area {
+  width: 70%;
+  padding-right: 5%; }
+
+.sidebar-area {
+  width: 30%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%; }
+
+.contact-info p {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .contact-info i {
   margin-right: .5rem;
   color: #808080; }
 
 .contact-info a {
-  color: red; }
+  color: #db272a; }
+
+.day-of-week {
+  color: #db272a;
+  font-weight: bold; }
+
+.widget-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: .75rem; }
+
+.widget_archive ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
+  .widget_archive ul a {
+    text-decoration: none;
+    color: #db272a; }
+  .widget_archive ul a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+  .widget_archive ul a {
+    text-decoration: none; }
 
 .blog-main-container {
   width: 1024px;
   margin: 0 auto;
-  background-color: red; }
+  background-color: #db272a; }

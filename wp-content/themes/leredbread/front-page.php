@@ -45,7 +45,7 @@
 <section class="latest-news">
 	<div class="latest-news-container">
 		<h2>Our Latest News</h2>
-		<hr class="decorative"> </hr>
+		<hr class="decorative"></hr>
 		<ul>
 			
 		<?php

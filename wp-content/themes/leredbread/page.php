@@ -7,10 +7,9 @@
 
 get_header(); ?>
 
-<p>test contact page this is from page.php</p>
-
 <div class="page-container">
-	<div id="primary" class="content-area">
+	<!-- <div id="primary" class="content-area"> -->
+		<div class="contact-content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -20,7 +19,8 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div>
+	<!-- </div> --><!-- #primary -->
 
 	<div class="sidebar-area">
 		<?php get_sidebar(); ?>

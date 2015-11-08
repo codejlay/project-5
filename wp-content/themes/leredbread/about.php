@@ -8,9 +8,13 @@ get_header(); ?>
 
 <div class="about-main-container">
 
+	<header class="entry-header">
+		<h1 class= "about-title"><?php echo esc_html(CFS()->get('title')); ?></h1>
+		<p class= "about-tagline"><?php echo esc_html( CFS()->get('tagline')); ?></p>
+		
+	</header>
 
-	<h1 class= "about-title"><?php echo esc_html(CFS()->get('title')); ?></h1>
-	<p class= "about-tagline"><?php echo esc_html( CFS()->get('tagline')); ?></p>
+	<hr class="decorative"></hr>
 
 	<div class ="about-content-container">
 		<div class="about-content-left">
@@ -33,6 +37,13 @@ get_header(); ?>
 		<?php echo CFS()->get('story'); ?>
 	</div>
 	
+	<section class="call-to-action">
+	 <p>
+	    <span>Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
+	    <a href="/le-red-bread/contact/" class="btn">Contact Us</a>
+	 </p>
+	</section>
+
 </div>
 
 <?php get_footer(); ?>

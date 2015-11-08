@@ -19,8 +19,10 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
-		
+			
+			<p>We are a team of creative and talented individuals who love making delicious treats.</p>	
+			<hr class="decorative"></hr>	
+
 			<section class="product-info-container">
 				<?php
 				$terms = get_terms("product-type");
@@ -37,6 +39,7 @@ get_header(); ?>
 						</li><?php
 					}
 				} ?>
+			</header><!-- .page-header -->
 			</section>
 			
 			<div class="product-grid">
