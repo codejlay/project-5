@@ -35,21 +35,35 @@
 		} ?>
 </section>
 
+<section class="call-to-action">
+	 <p>
+	    <span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
+	    <a href="/le-red-bread/product/" class="btn">See Our Products</a>
+	 </p>
+</section>
+
 <section class="latest-news">
 	<div class="latest-news-container">
 		<h2>Our Latest News</h2>
 		<hr class="decorative"> </hr>
+		<ul>
+			
 		<?php
 		$args = array( 'posts_per_page' => 4);
 
 		$myposts = get_posts( $args );
 		foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-		<li>
-			<p href="<?php the_permalink(); ?>"><?php the_post_thumbnail ('medium'); ?></p>
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			<p> <?php the_time ('d M Y');?> / <?php comments_number('0 Comments'); ?></p>
-		</li>
+		
+			<li>
+				<div class="thumbnail-wrapper" href="<?php the_permalink(); ?>"><?php the_post_thumbnail ('medium'); ?></div>
+				<div class="post-info-wrapper">
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<span class="entry-meta"> <?php the_time ('d M Y');?> / <?php comments_number('0 Comments'); ?></span>
+				</div>
+		
 		<?php endforeach; ?>
+			</li>
+		</ul>
 	</div>
 </section>
 <?php
@@ -61,3 +75,5 @@ wp_reset_postdata();?>
 <?php get_footer(); ?>
 
 <!-- <p><?php echo get_the_post_thumbnail( $home_post[1]->ID ); ?></p> -->
+
+

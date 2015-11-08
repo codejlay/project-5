@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<p>test contact page this is from page.php</p>
+
 <div class="page-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

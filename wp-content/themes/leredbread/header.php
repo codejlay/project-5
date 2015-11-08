@@ -54,8 +54,15 @@
 							</div>
 
 							<div class="header-search">
-								<input class="search-field" type="search" title="Search for:" name="s" value="" placeholder="SEARCH ..."></input>
-								<button><i class="fa fa-search"></i></button>
+								<!-- <input class="search-field" type="search" title="Search for:" name="s" value="" placeholder="SEARCH ..."></input> -->
+								<!-- <button><i class="fa fa-search"></i></button> -->
+								<input type="search" class="search-field" placeholder="SEARCH ..." value="" name="s" title="Search for:">
+								<button class="search-submit">
+									<span class="icon-search" aria-hidden="true">
+										<i class="fa fa-search"></i>
+									</span>
+									<span class="screen-reader-text">Search</span>
+							</button>
 							</div>
 						</div>
 					</nav><!-- #site-navigation -->

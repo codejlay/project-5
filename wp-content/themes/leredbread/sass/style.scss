@@ -73,10 +73,10 @@ html {
 
 
 body {
-	margin: 0 auto;
+	// margin: 0 auto;
 	font-family: $font-main;
 	font-size: $font-size;
-	padding-top: 2.25rem;
+	// padding-top: 2.25rem;
 }
 
 
@@ -102,49 +102,34 @@ h3 {
 .container {
 	// max-width: 1024px;
 	// margin: 0 auto;
-
+border-top: 1px solid #e1e1e1;
+background-color: #fff;
 }
 
 .site-header {
-	// max-width: 1024px;
-	// margin: 0 auto;
+	background-color: #fafafa;
+	padding-top: 2.25rem;
+	// border-top: 1px solid #e1e1e1;
 	// background-color: red;
-	// border-bottom: 1px solid #e1e1e1;
-	// background-color: blue;
 
 }
 
 .site-content {
 	// display: flex;
+	// width: 1024px;
+	// margin: 0 auto;
 
 }
 
-.hero {
-	background: url(../../images/hero-bread.jpg) no-repeat center center;
-	height: 550px;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 3rem;
 
-	.hero-text {
-		color:white;
-		text-transform: uppercase;
-		font-size: 6rem;
-		font-family: $font-header;
-	}	
-}
-
-
-
-// header
+// header - header.php
 
 
 .site-branding {
-	padding-bottom: 2rem;
+	padding: 2rem 0;
 	max-width: 1024px;
 	margin: 0 auto;
+	// border-top: 1px solid #e1e1e1;
 
 	img {
 	width: 300px;
@@ -194,6 +179,7 @@ h3 {
 
 .menu-main-container {
 
+	// background-color: red;
 
 	a {
 		border-left: solid 1px silver;
@@ -212,6 +198,14 @@ h3 {
 	}
 }
 
+.current_page_ancestor:after, .current_page_item:after {
+    content: "";
+    background-color: #db272a;
+    display: block;
+    height: 3px;
+    margin-top: -3px;
+    width: 100%;
+}
 
 .header-search {
 	
@@ -228,6 +222,27 @@ h3 {
 		border: 0;
 	}
 }
+
+
+// home page - front-page.php
+
+.hero {
+	background: url(../../images/hero-bread.jpg) no-repeat center center;
+	height: 550px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3rem;
+
+	.hero-text {
+		color:white;
+		text-transform: uppercase;
+		font-size: 6rem;
+		font-family: $font-header;
+	}	
+}
+
 
 .product-info-container{
 	// display: flex;
@@ -258,12 +273,96 @@ h3 {
 	width: 22%;
 }
 
-.latest-news-container {
-	display: flex;
+.call-to-action {
+	// background-color: red;
+	text-align: center;
+	background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    margin: 0 auto;
+    width: 1024px;
+
+	span {
+    margin-top: .5rem;
+	}
+
+
+	.btn {
+	border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #fff;
+    // cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+	}    
+}
+.latest-news {
+	background-color: #fafafa;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding: 3rem 0;
+}
+
+.latest-news-container  {
+	// display: flex;
+	// justify-content: space-between;
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	// background-color: red;
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	ul {
+	box-shadow: 0 0 3px rgba(100,100,100,.25);
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 0 1.5rem 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+
+
+    	li {
+		background-color: #fff;
+		border: 1px solid #e1e1e1;
+		flex: 1 0 25%;
+		max-width: 25%;
+		list-style: none;
+    	}
+	}
+}
+
+.thumbnail-wrapper {
+	height: 200px;
+    overflow: hidden;
+    position: relative;
+	white-space:nowrap;  
+	text-overflow: ellipsis;
+
+	img {
+	left: 50%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	}
 }
 
 
-//footer
+.post-info-wrapper {
+	overflow: hidden;
+    position: relative;
+	white-space:nowrap;  
+	text-overflow: ellipsis;
+}
+
+
+//footer page - footer.php
 
 .site-footer {
 	background-color: $color-brand-black;
@@ -329,37 +428,41 @@ h3 {
 
 // page.php
 
-// .page-container {
-// 	display: flex;
-// 	margin: 0 auto;
+.page-container {
+	display: flex;
+	margin: 0 auto;
 
-// }
+}
 
-// .content-area {
-// 	width: 70%;
-// 	// background-color: red;
-// }
-
-
-// .sidebar-area {
-// 	width: 30%;
-// 	// background-color: blue;
+.content-area {
+	// width: 73%;
+	// background-color: red;
+	// align-items: center;
+	// text-align: center;
+}
 
 
-// }
-
-// body.home .content-area {
-// 	width: 100%;
-
-// }
-
-// body.home .sidebar-area {
-// 	width: 0;
-
-// }
+.sidebar-area {
+	width: 27%;
+	// background-color: blue;
+	border-left: solid 1px #e1e1e1;
+	padding-left: 5%;
 
 
-// about
+}
+
+body.home .content-area {
+	width: 100%;
+
+}
+
+body.home .sidebar-area {
+	width: 0;
+
+}
+
+
+// about page - about.php
 
 .about-main-container {
 	width: 1024px;
@@ -386,13 +489,11 @@ h3 {
 }
 
 .about-content-left {
-	// background-color: red;
 	flex: 0 1 47.5%;
 }
 
 
 .about-content-right {
-	// background-color: blue;
 	flex: 0 1 47.5%;
 }
 
@@ -423,9 +524,8 @@ h3 {
 	}
 }
 
-// product-grid
 
-
+// products page - archive.php
 
 .product-grid-container {
 	width: 1024px;
@@ -438,7 +538,6 @@ h3 {
 			margin: 0 auto;
 
 			.product {
-				// width: 10%;
 			}
 		}
 	}
@@ -451,12 +550,8 @@ h3 {
 
 .product-grid {
 	display: flex;
-	// margin: 0 auto;
-	// align-content: flex-start;
-	// background-color: green;
 	flex-wrap: wrap;
 	margin-bottom: 4.5rem;
-	
 }
 
 .product-grid-item {
@@ -464,33 +559,25 @@ h3 {
 	flex: 0 1 25%;
 	// background-color: red;
 	border: 1px solid #e1e1e1;
-	// padding: 1rem;
 	
 
 }
 
 .product-info {
-	// display: flex;
-	// justify-content: space-around;
-	// white-space: nowrap;
-	// padding: 2rem;
+	padding: .75rem 1rem;
+	width: auto;
+
 
 	
 	.entry-title {
-		background-color: red;
-		// float: left;
-
-		    white-space: nowrap;
-		    // overflow: hidden;
-    // content: "...................................................";
+		background-color: #fff;
+		padding-right: .25rem;
 	}
 
 	.product-grid-price {
-		// content: "...........................";
-		// overflow: hidden;
 		float: right;
+		padding-left: .25rem;
 		background-color: #fff;
-		overflow: hidden;
 	}
 
 }
@@ -499,8 +586,35 @@ h3 {
 	float: left;
 	width: 0;
 	white-space: nowrap;
-
 	content: "...........................";	
-
 }
 
+
+// contact page - page.php
+
+.contact-info {
+
+  h2 {
+  }
+
+  p {
+  }
+
+  i {
+  	margin-right: .5rem;
+  	color: $color-brand-medium-grey;
+  }
+
+  a {
+  	color: red;
+  }
+}
+
+
+// blog page - index.php
+
+.blog-main-container {
+	width: 1024px;
+	margin: 0 auto;
+	background-color: red;
+}
