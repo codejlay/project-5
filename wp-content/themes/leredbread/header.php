@@ -27,7 +27,6 @@
 				<div class="site-branding">
 					<div class="site-branding-inner">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 						<div class="logo">
 							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
 						</div>
@@ -44,8 +43,6 @@
 					</div>
 				</div><!-- .site-branding -->
 
-
-
 				<div class="clearfix" id="navigation">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<div class="main-navigation-container">
@@ -54,15 +51,13 @@
 							</div>
 
 							<div class="header-search">
-								<!-- <input class="search-field" type="search" title="Search for:" name="s" value="" placeholder="SEARCH ..."></input> -->
-								<!-- <button><i class="fa fa-search"></i></button> -->
 								<input type="search" class="search-field" placeholder="SEARCH ..." value="" name="s" title="Search for:">
 								<button class="search-submit">
 									<span class="icon-search" aria-hidden="true">
-										<i class="fa fa-search"></i>
+										<i class="fa fa-search"></i><?php get_search_form( $echo ); ?>
 									</span>
 									<span class="screen-reader-text">Search</span>
-							</button>
+								</button>
 							</div>
 						</div>
 					</nav><!-- #site-navigation -->

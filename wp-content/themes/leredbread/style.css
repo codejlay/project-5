@@ -999,7 +999,9 @@ body.home .sidebar-area {
 
 .about-main-container {
   width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .about-title {
   text-align: center;
@@ -1020,17 +1022,23 @@ body.home .sidebar-area {
   -webkit-flex: 0 1 47.5%;
       -ms-flex: 0 1 47.5%;
           flex: 0 1 47.5%; }
+  .about-content-left h3 {
+    margin: 0; }
 
 .about-content-right {
   -webkit-flex: 0 1 47.5%;
       -ms-flex: 0 1 47.5%;
           flex: 0 1 47.5%; }
+  .about-content-right h3 {
+    margin: 0; }
 
 .about-blurb1-motto {
-  color: #a1a1a1; }
+  color: #a1a1a1;
+  margin: 0 0 1rem; }
 
 .about-blurb2-motto {
-  color: #a1a1a1; }
+  color: #a1a1a1;
+  margin: 0 0 1rem; }
 
 .about-story {
   line-height: 1rem;
@@ -1046,6 +1054,11 @@ body.home .sidebar-area {
   .product-grid-container .product-info-container .product-type {
     width: 60%;
     margin: 0 auto; }
+    .product-grid-container .product-info-container .product-type a {
+      color: #400c0d;
+      text-decoration: none; }
+    .product-grid-container .product-info-container .product-type a:hover {
+      text-decoration: underline; }
 
 .page-header {
   text-align: center;
@@ -1069,24 +1082,100 @@ body.home .sidebar-area {
           flex: 0 1 25%;
   border: 1px solid #e1e1e1; }
 
-.product-info {
+.product-grid-info {
   padding: .75rem 1rem;
   width: auto; }
-  .product-info .entry-title {
+  .product-grid-info .entry-title:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: "..................................................."; }
+  .product-grid-info .entry-title {
     background-color: #fff;
     padding-right: .25rem; }
-  .product-info .product-grid-price {
+  .product-grid-info .product-grid-price {
     float: right;
     padding-left: .25rem;
     background-color: #fff; }
 
-.entry-title:before {
-  float: left;
-  width: 0;
-  white-space: nowrap; }
+.product-type-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
 
-.entry-title {
-  text-transform: uppercase; }
+.product-type-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .product-type-content-area .page-header {
+    text-align: left;
+    border-bottom: 1px dashed #d2d2d2;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5; }
+    .product-type-content-area .page-header h1 {
+      text-transform: uppercase;
+      margin: 0; }
+    .product-type-content-area .page-header .taxonomy-description p {
+      margin: 0; }
+
+.product-type-list-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
+.product-type-img img {
+  height: 150px;
+  min-width: 150px;
+  width: 150px; }
+
+.product-type-info {
+  padding: 0 1.5rem; }
+  .product-type-info .entry-title {
+    margin: 0;
+    color: #db272a;
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+  .product-type-info p {
+    margin-bottom: 1rem; }
+  .product-type-info .price {
+    margin: 0 0 1rem; }
+
+.product-type-sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product-main-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.single-product-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product-sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.contact-content-area .entry-title {
+  text-transform: uppercase;
+  margin: 0 0 .25rem 0; }
 
 .entry-content h2 {
   color: #808080; }
@@ -1134,13 +1223,20 @@ input.wpcf7-form-control.wpcf7-submit {
   margin: 0 auto; }
 
 .contact-content-area {
-  width: 70%;
-  padding-right: 5%; }
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .sidebar-area {
-  width: 30%;
+  width: 27%;
   border-left: solid 1px #e1e1e1;
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+h2.widget-title {
+  margin: 0 0 .75rem 0; }
 
 .contact-info p {
   display: -webkit-flex;
@@ -1156,7 +1252,8 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .day-of-week {
   color: #db272a;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-right: .25rem; }
 
 .widget-title {
   text-transform: uppercase;
@@ -1178,5 +1275,56 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .blog-main-container {
   width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  background-color: #db272a; }
+  line-height: 1; }
+
+.blog-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .blog-content-area a {
+    text-decoration: none;
+    color: #db272a; }
+  .blog-content-area .entry-content a {
+    font-weight: 700; }
+
+.blog-sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.blog-single-main-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.blog-single-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .blog-single-content-area a {
+    text-decoration: none;
+    color: #db272a; }
+  .blog-single-content-area a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+  .blog-single-content-area .entry-header h1 {
+    text-transform: uppercase;
+    margin-bottom: .25rem;
+    line-height: 2rem; }
+
+.blog-single-sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }

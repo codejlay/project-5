@@ -4,12 +4,12 @@
  *
  * @package RED_Starter_Theme
  */
-
+ 
 get_header(); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div class="blog-main-container">
-				<p>blog page test. this is index.php</p>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<div class="blog-main-container">
+			<div class="blog-content-area">
 				<?php if ( have_posts() ) : ?>
 
 					<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -27,14 +27,20 @@ get_header(); ?>
 
 					<?php the_posts_navigation(); ?>
 
-				<?php else : ?>
+					<?php else : ?>
 
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; ?>
 			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			
+			<div class="blog-sidebar-area">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 		
-<?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>

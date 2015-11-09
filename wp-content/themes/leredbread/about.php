@@ -7,11 +7,9 @@
 get_header(); ?>
 
 <div class="about-main-container">
-
 	<header class="entry-header">
 		<h1 class= "about-title"><?php echo esc_html(CFS()->get('title')); ?></h1>
 		<p class= "about-tagline"><?php echo esc_html( CFS()->get('tagline')); ?></p>
-		
 	</header>
 
 	<hr class="decorative"></hr>
@@ -43,7 +41,6 @@ get_header(); ?>
 	    <a href="/le-red-bread/contact/" class="btn">Contact Us</a>
 	 </p>
 	</section>
-
 </div>
 
 <?php get_footer(); ?>

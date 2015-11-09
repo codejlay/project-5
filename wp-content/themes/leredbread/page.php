@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="page-container">
 	<!-- <div id="primary" class="content-area"> -->
-		<div class="contact-content-area">
+	<div class="contact-content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-		</div>
+	</div>
 	<!-- </div> --><!-- #primary -->
 
 	<div class="sidebar-area">
