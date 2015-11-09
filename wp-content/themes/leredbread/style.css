@@ -811,7 +811,8 @@ h3 {
     outline: 0; }
   .header-search button {
     background: none;
-    border: 0; }
+    border: 0;
+    box-shadow: none; }
 
 .hero {
   background: url(../../images/hero-bread.jpg) no-repeat center center;
@@ -1213,7 +1214,8 @@ input.wpcf7-form-control.wpcf7-submit {
   cursor: pointer;
   line-height: 1;
   padding: .75rem 1.5rem;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: none; }
 
 .page-container {
   width: 1024px;
