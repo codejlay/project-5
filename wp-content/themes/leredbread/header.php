@@ -28,9 +28,11 @@
 					<div class="site-branding-inner">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<div class="logo">
-							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
+							<a href="http://localhost:3000/le-red-bread/" rel="home">
+								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
+							</a>
 						</div>
-
+							
 						<div >
 							<ul class="social-container">
 								<li><i class="fa fa-facebook"></i></li>
@@ -51,13 +53,15 @@
 							</div>
 
 							<div class="header-search">
-								<input type="search" class="search-field" placeholder="SEARCH ..." value="" name="s" title="Search for:">
+								<?php get_search_form(); ?>
+								<!-- <input type="search" class="search-field" placeholder="SEARCH ..." value="" name="s" title="Search for:">
 								<button class="search-submit">
 									<span class="icon-search" aria-hidden="true">
 										<i class="fa fa-search"></i><?php get_search_form( $echo ); ?>
 									</span>
+
 									<span class="screen-reader-text">Search</span>
-								</button>
+								</button> -->
 							</div>
 						</div>
 					</nav><!-- #site-navigation -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The main front-page file.
  *
  * @package RED_Starter_Theme
  */
@@ -21,18 +21,19 @@
 		<?php
 		$terms = get_terms("product-type");
 		if ($terms) {?>
-		<ul class="product-type">
+		<ul class="product-type-blocks">
 			<?php foreach($terms as $term) { ?>
-			<li class="product">
+			<li class="product-type-block-wrapper">
 				<img src="<?php echo get_template_directory_uri() ?>/images/<?php echo $term->slug ?>.png"
 				alt="<?php echo $term->slug ?>">
 				<h3><?php echo $term->name ?></h3>
 				<p><?php echo $term->description;?>
 					<a href="<?php echo get_term_link( $term ); ?>">See More...</a>
 				</p>
-				</li><?php
+			</li><?php
 			}
 		} ?>
+		</ul>
 </section>
 
 <section class="call-to-action">
@@ -55,7 +56,7 @@
 		foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 		
 			<li>
-				<div class="thumbnail-wrapper" href="<?php the_permalink(); ?>"><?php the_post_thumbnail ('medium'); ?></div>
+				<div class="thumbnail-wrapper" href="<?php the_permalink(); ?>"><?php the_post_thumbnail ('large'); ?></div>
 				<div class="post-info-wrapper">
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<span class="entry-meta"> <?php the_time ('d M Y');?> / <?php comments_number('0 Comments'); ?></span>
@@ -66,14 +67,9 @@
 		</ul>
 	</div>
 </section>
-<?php
 
-
-wp_reset_postdata();?>
-
-
+<?php wp_reset_postdata();?>
 <?php get_footer(); ?>
 
-<!-- <p><?php echo get_the_post_thumbnail( $home_post[1]->ID ); ?></p> -->
 
 
