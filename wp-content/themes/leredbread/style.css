@@ -783,7 +783,7 @@ h3 {
 
 .menu-main-container a {
   border-left: solid 1px silver;
-  padding: .75rem 2rem;
+  padding: .75rem 1.5rem;
   color: #808080;
   font-weight: bold; }
 
@@ -804,23 +804,28 @@ h3 {
 .header-search {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
-  .header-search .search-field {
+  display: flex;
+  padding-top: 3px; }
+  .header-search fieldset {
     background-color: transparent;
+    border: none; }
+    .header-search fieldset input {
+      padding: .2rem .3rem 0; }
+  .header-search .search-field {
     border: 0;
     outline: 0; }
   .header-search button {
     background: none;
     border: 0;
-    box-shadow: none; }
+    box-shadow: none;
+    font-size: .8rem; }
 
 .hero {
-  background: url(../../images/hero-bread.jpg) no-repeat center center;
+  background: url(../../images/hero-bread.jpg) no-repeat center top;
   height: 550px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1152,9 +1157,14 @@ body.home .sidebar-area {
   padding: 0 1.5rem; }
   .product-type-info .entry-title {
     margin: 0;
-    color: #db272a;
     font-size: 1.8rem;
     margin-bottom: 1rem; }
+    .product-type-info .entry-title a {
+      color: #db272a;
+      text-decoration: none; }
+    .product-type-info .entry-title a:hover {
+      color: #400c0d;
+      text-decoration: underline; }
   .product-type-info p {
     margin-bottom: 1rem; }
   .product-type-info .price {
@@ -1347,6 +1357,90 @@ h2.widget-title {
 
 .blog-single-sidebar-area {
   width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.archive-main-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.archive-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .archive-content-area .page-header {
+    border-bottom: 1px dashed #a1a1a1; }
+  .archive-content-area .page-title {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #222222; }
+  .archive-content-area .entry-title {
+    margin: 0; }
+    .archive-content-area .entry-title a {
+      text-decoration: none;
+      color: #db272a; }
+    .archive-content-area .entry-title a:hover {
+      color: #400c0d;
+      text-decoration: underline; }
+  .archive-content-area .entry-content a {
+    text-decoration: none;
+    color: #db272a;
+    font-weight: bold; }
+  .archive-content-area .entry-content a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+.archive-sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.search-main-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.search-content-area {
+  width: 50%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .search-content-area .page-header {
+    border-bottom: 1px dashed #a1a1a1; }
+  .search-content-area .page-title {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #222222; }
+  .search-content-area .entry-title {
+    margin: 0; }
+    .search-content-area .entry-title a {
+      text-decoration: none;
+      color: #db272a; }
+    .search-content-area .entry-title a:hover {
+      color: #400c0d;
+      text-decoration: underline; }
+  .search-content-area .entry-summary a {
+    text-decoration: none;
+    color: #db272a;
+    font-weight: bold; }
+  .search-content-area .entry-summary a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+.search-sidebar-area {
+  width: 40%;
   border-left: solid 1px #e1e1e1;
   padding-left: 5%;
   padding-top: 3rem;

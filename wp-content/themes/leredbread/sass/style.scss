@@ -164,7 +164,7 @@ background-color: #fff;
 .menu-main-container {
 	a {
 		border-left: solid 1px silver;
-		padding: .75rem 2rem;
+		padding: .75rem 1.5rem;
 		color: $color-brand-medium-grey;
 		font-weight: bold;
 	}
@@ -188,29 +188,30 @@ background-color: #fff;
 }
 
 
-// .current_page_ancestor:after, .current-menu-item:after {
-//     content: "";
-//     background-color: #db272a;
-//     display: block;
-//     height: 3px;
-//     margin-top: -3px;
-//     width: 100%;
-// }
-
-
 .header-search {
 	display: flex;
+	padding-top: 3px;
+
+	fieldset {
+		background-color: transparent;
+    	border: none;
+
+
+    	input {
+    		padding: .2rem .3rem 0;
+    	}
+	}
 
 	.search-field {
-		background-color: transparent;
 		border: 0;
-		outline: 0;
+		outline: 0;	
 	}
 
 	button {
 		background: none;
 		border: 0;
 		box-shadow: none;
+		font-size: .8rem;
 	}
 }
 
@@ -218,10 +219,9 @@ background-color: #fff;
 // home page - front-page.php
 
 .hero {
-	background: url(../../images/hero-bread.jpg) no-repeat center center;
+	background: url(../../images/hero-bread.jpg) no-repeat center top;
 	height: 550px;
 	display: flex;
-	width: 100%;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 3rem;
@@ -651,9 +651,19 @@ body.home .sidebar-area {
 
 	.entry-title {
 		margin: 0;
-		color: #db272a;
 		font-size: 1.8rem;
 		margin-bottom: 1rem;
+
+			a {
+				color: $color-brand-red;
+				text-decoration: none;
+			}
+
+			a:hover { 
+				color: $color-brand-brown;
+				text-decoration: underline;
+			}
+
 		}
 
 	p {
@@ -957,4 +967,129 @@ h2.widget-title {
 	padding-left: 5%;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+}
+
+
+// archives page - archive.php
+
+.archive-main-container {
+	width: 1024px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.archive-content-area {
+	width: 73%;
+	padding-right: 5%;
+    padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	.page-header {
+		border-bottom: 1px dashed $color-brand-light-grey;
+	}
+
+	.page-title {
+		text-align: left;
+		text-transform: uppercase;
+		margin-top: 0;
+		color: $color-brand-black;
+	}
+
+	.entry-title {
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: $color-brand-red;
+		}
+
+		a:hover {
+		color: $color-brand-brown;
+		text-decoration: underline;
+		}
+	}
+
+	.entry-content {
+		a {
+			text-decoration: none;
+			color: $color-brand-red;
+			font-weight: bold;
+		}
+
+		a:hover {
+		color: $color-brand-brown;
+		text-decoration: underline;
+		}
+	}
+}
+
+.archive-sidebar-area {
+	width: 27%;
+	border-left: solid 1px #e1e1e1;
+	padding-left: 5%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+// search page - search.php
+
+.search-main-container {
+	width: 1024px;
+	display: flex;
+	margin: 0 auto;
+	// background-color: blue;
+}
+
+.search-content-area {
+	width: 50%;
+	padding-right: 5%;
+    padding-top: 3rem;
+	padding-bottom: 3rem;
+	// background-color: yellow;
+
+	.page-header {
+		border-bottom: 1px dashed $color-brand-light-grey;
+	}
+
+	.page-title {
+		text-align: left;
+		text-transform: uppercase;
+		margin-top: 0;
+		color: $color-brand-black;
+	}
+
+	.entry-title {
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: $color-brand-red;
+		}
+
+		a:hover {
+		color: $color-brand-brown;
+		text-decoration: underline;
+		}
+	}
+
+	.entry-summary {
+		a {
+			text-decoration: none;
+			color: $color-brand-red;
+			font-weight: bold;
+		}
+
+		a:hover {
+		color: $color-brand-brown;
+		text-decoration: underline;
+		}
+	}
+}
+
+.search-sidebar-area {
+	width: 40%;
+	border-left: solid 1px #e1e1e1;
+	padding-left: 5%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	// background-color: red;
 }

@@ -29,7 +29,7 @@
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<div class="logo">
 							<a href="http://localhost:3000/le-red-bread/" rel="home">
-								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread logo"/>
 							</a>
 						</div>
 							
