@@ -75,6 +75,7 @@ html {
 body {
 	font-family: $font-main;
 	font-size: $font-base;
+	color: $color-brand-black;
 }
 
 
@@ -133,6 +134,7 @@ background-color: #fff;
 .social-container {
 	display: flex;
 	list-style: none;
+	color: $color-brand-light-grey;
 
 	i {
 		padding-left: 1rem;
@@ -180,7 +182,7 @@ background-color: #fff;
 
 .current_page_ancestor:after, .current_page_item:after {
     content: "";
-    background-color: #db272a;
+    background-color: $color-brand-red;
     display: block;
     height: 3px;
     margin-top: -3px;
@@ -239,7 +241,6 @@ background-color: #fff;
 .product-info-container{
 	margin: 0 auto;
 	width: 1024px;
-
 }
 
 
@@ -253,12 +254,24 @@ background-color: #fff;
 	h3 {
 		text-transform: uppercase;
 		text-align: center;
+		color: $color-brand-brown;
 	}
 }
 
 
 .product-type-block-wrapper {
 	width: 22%;
+
+	a {
+		text-decoration: none;
+		color: $color-brand-red;
+		margin-left: .25rem;
+	}
+
+	a:hover {
+		color: $color-brand-brown;
+		text-decoration: underline;
+	}
 }
 
 
@@ -628,7 +641,7 @@ body.home .sidebar-area {
 		}
 
 		.taxonomy-description p {
-			margin: 0;
+			margin: 1rem 0 0 ;
 		}
 	}
 }
@@ -643,6 +656,7 @@ body.home .sidebar-area {
 	height: 150px;
     min-width: 150px;
     width: 150px;
+    margin-bottom: 1rem;
 }
 
 
@@ -748,11 +762,11 @@ body.home .sidebar-area {
 	font-weight: 700;
 
 	span {
-		color: #db272a;
+		color: $color-brand-red;
 	}
 
 	input, textarea {
-		background-color: #fafafa;
+		background-color: $color-off-white;
 	}
 
 }
@@ -767,6 +781,7 @@ body.home .sidebar-area {
 	width: 100%;
 	}
 }
+
 
 .email {
 	float:right;
@@ -798,11 +813,11 @@ input.wpcf7-form-control.wpcf7-submit {
     box-shadow: none;
 }
 
+
 .page-container {
 	width: 1024px;
 	display: flex;
 	margin: 0 auto;
-
 }
 
 
@@ -811,7 +826,6 @@ input.wpcf7-form-control.wpcf7-submit {
     padding-right: 5%;
     padding-top: 3rem;
 	padding-bottom: 3rem;
-
 }
 
 
@@ -821,13 +835,13 @@ input.wpcf7-form-control.wpcf7-submit {
 	padding-left: 5%;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-
-
 }
+
 
 h2.widget-title {
 	margin: 0 0 .75rem 0;
 }
+
 
 .contact-info {
 
@@ -841,14 +855,20 @@ h2.widget-title {
   	}
 
   	a {
-  	color: #db272a;
+  	color: $color-brand-red;
+  	line-height: .25rem;
   	}
 }
 
 .day-of-week {
-	color: #db272a;
+	color: $color-brand-red;
 	font-weight: bold;
 	padding-right: .25rem;
+}
+
+
+.lrb-business-hours-class {
+	line-height: 1rem;
 }
 
 
@@ -856,6 +876,11 @@ h2.widget-title {
 		text-transform: uppercase;
 		font-size: 1.2rem;
     	margin-bottom: .75rem;
+
+    	p {
+    		line-height: .5rem;
+    		background-color: green;
+    	}
 	}
 
 
@@ -872,7 +897,7 @@ h2.widget-title {
 
 		a {
 			text-decoration: none;
-			color: #db272a;
+			color: $color-brand-red;
 		}
 
 		a:hover {
@@ -893,7 +918,6 @@ h2.widget-title {
 	width: 1024px;
 	display: flex;
 	margin: 0 auto;
-	line-height: 1;
 }
 
 
@@ -903,9 +927,18 @@ h2.widget-title {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 
+	article {
+		margin-bottom: 4.5rem;
+	}
+
 	a {
 		text-decoration: none;
-		color: #db272a;
+		color: $color-brand-red;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		color: $color-brand-brown;
 	}
 
 	.entry-content {
@@ -913,6 +946,10 @@ h2.widget-title {
 		a {
 			font-weight: 700;
 		}
+	}
+
+	.entry-title {
+		margin: 0;
 	}
 }
 
@@ -943,7 +980,7 @@ h2.widget-title {
 
 	a {
 		text-decoration: none;
-		color: #db272a;
+		color: $color-brand-red;
 	}
 
 	a:hover {
@@ -992,7 +1029,6 @@ h2.widget-title {
 		text-align: left;
 		text-transform: uppercase;
 		margin-top: 0;
-		color: $color-brand-black;
 	}
 
 	.entry-title {
@@ -1037,15 +1073,13 @@ h2.widget-title {
 	width: 1024px;
 	display: flex;
 	margin: 0 auto;
-	// background-color: blue;
 }
 
 .search-content-area {
-	width: 50%;
+	width: 73%;
 	padding-right: 5%;
     padding-top: 3rem;
 	padding-bottom: 3rem;
-	// background-color: yellow;
 
 	.page-header {
 		border-bottom: 1px dashed $color-brand-light-grey;
@@ -1055,7 +1089,6 @@ h2.widget-title {
 		text-align: left;
 		text-transform: uppercase;
 		margin-top: 0;
-		color: $color-brand-black;
 	}
 
 	.entry-title {
@@ -1086,10 +1119,9 @@ h2.widget-title {
 }
 
 .search-sidebar-area {
-	width: 40%;
+	width: 27%;
 	border-left: solid 1px #e1e1e1;
 	padding-left: 5%;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	// background-color: red;
 }

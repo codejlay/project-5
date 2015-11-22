@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive product pages.
+ * The template for displaying archive product page.
  *
  * @package RED_Starter_Theme
  */

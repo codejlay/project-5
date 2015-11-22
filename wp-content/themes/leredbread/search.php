@@ -30,11 +30,13 @@ get_header(); ?>
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 					<?php endif; ?>
+				</div>
+				
 				<div class="search-sidebar-area">
 					<?php get_sidebar(); ?>
 				</div>
 					
-				</div>
+				
 			</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
