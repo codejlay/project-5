@@ -1,7 +1,7 @@
 <?php
 /**
  *
- *Template Name:about page
+ *Template Name:about pages.
  * @package RED_Starter_Theme
  */
 get_header(); ?>
