@@ -863,6 +863,8 @@ h3 {
 
 .product-type-block-wrapper {
   width: 22%; }
+  .product-type-block-wrapper img {
+    width: 80%; }
   .product-type-block-wrapper a {
     text-decoration: none;
     color: #db272a;
@@ -1395,11 +1397,20 @@ h2.widget-title {
     text-transform: uppercase;
     margin-bottom: .25rem;
     line-height: 2rem; }
+  .blog-single-content-area .entry-content blockquote {
+    border-left: 7px solid #db272a;
+    color: #a1a1a1;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-left: 0;
+    padding-left: 1.5rem;
+    quotes: "" ""; }
   .blog-single-content-area .cat-links {
     margin-right: 1.5rem; }
   .blog-single-content-area .comments-title {
     margin-bottom: 0;
-    color: #808080; }
+    color: #808080;
+    font-size: 1.5rem; }
   .blog-single-content-area .comment-list {
     margin-left: 0;
     padding-left: 0; }
@@ -1422,8 +1433,55 @@ h2.widget-title {
   .blog-single-content-area .comment-author cite {
     font-style: normal;
     font-weight: bold; }
+  .blog-single-content-area .comment-metadata {
+    color: #a1a1a1; }
+  .blog-single-content-area .reply {
+    display: none; }
+  .blog-single-content-area .comment-list article {
+    margin-bottom: 0; }
   .blog-single-content-area article {
     margin-bottom: 4.5rem; }
+  .blog-single-content-area .comment-reply-title {
+    font-size: 1.4rem;
+    color: #400c0d; }
+  .blog-single-content-area .comment-notes {
+    color: #222222;
+    font-weight: normal;
+    margin: 0; }
+  .blog-single-content-area .comment-form {
+    color: #808080;
+    font-weight: 700; }
+    .blog-single-content-area .comment-form span {
+      color: #db272a; }
+    .blog-single-content-area .comment-form input, .blog-single-content-area .comment-form textarea {
+      background-color: #fafafa; }
+  .blog-single-content-area .comment-form-author {
+    float: left;
+    margin-right: 1%;
+    width: 49%; }
+    .blog-single-content-area .comment-form-author input {
+      width: 100%; }
+  .blog-single-content-area .comment-form-email {
+    float: right;
+    margin-left: 1%;
+    width: 49%; }
+    .blog-single-content-area .comment-form-email input {
+      width: 100%; }
+  .blog-single-content-area .comment-form-url input {
+    width: 100%; }
+  .blog-single-content-area .form-submit input {
+    border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-family: "open_sans", "sans-serif";
+    font-weight: normal; }
 
 .blog-single-sidebar-area {
   width: 27%;
