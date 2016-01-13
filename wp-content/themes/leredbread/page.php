@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<?php wp_redirect( home_url() ); exit; ?>
+
 <div class="page-container">
 	<!-- <div id="primary" class="content-area"> -->
 	<div class="contact-content-area">

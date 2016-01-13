@@ -1,0 +1,76 @@
+//footer page - footer.php
+
+.site-footer {
+	background-color: $color-brand-black;
+}
+
+
+.footer-block-container {
+	background-color: $color-brand-black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	max-width: 1024px;
+	margin: 0 auto;
+	line-height: 1rem;
+
+	h3 {
+		color: $color-brand-medium-grey;
+		margin-bottom: .75rem;
+		text-transform: uppercase;
+	}
+
+	.footer-logo img {
+		width: 250px;
+	}
+}
+
+
+.contact {
+	margin: 3rem;
+
+	h3 {
+		margin-top: 0;
+	}
+
+	i {
+		font-size: 1.5rem;
+		padding-right: .5rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:visited {
+		color: white;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	p {
+		margin-bottom: .5rem;
+	}
+}
+
+
+.business-hours {
+	margin: 3rem 0;
+}
+
+
+.copyright-container {
+	background-color: $color-brand-dark-grey;
+	color: white;
+	font-size: .8rem;
+	text-align: center;
+	padding: 1.5rem;
+
+	p {
+		margin: 0;
+	}
+}

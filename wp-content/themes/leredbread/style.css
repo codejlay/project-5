@@ -337,6 +337,23 @@ mark, ins {
 big {
   font-size: 125%; }
 
+body {
+  font-family: "open_sans", "sans-serif";
+  font-size: 16px;
+  color: #222222; }
+
+h1, h2, h3 {
+  font-family: "overlock", "sans-serif"; }
+
+h1 {
+  font-size: 2.1rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.2rem; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -708,31 +725,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-body {
-  font-family: "open_sans", "sans-serif";
-  font-size: 16px;
-  color: #222222; }
-
-h1, h2, h3 {
-  font-family: "overlock", "sans-serif"; }
-
-h1 {
-  font-size: 2.1rem; }
-
-h2 {
-  font-size: 1.8rem; }
-
-h3 {
-  font-size: 1.2rem; }
-
-.container {
-  border-top: 1px solid #e1e1e1;
-  background-color: #fff; }
-
 .site-header {
   background-color: #fafafa;
   padding-top: 2.25rem; }
@@ -821,6 +813,13 @@ h3 {
     border: 0;
     box-shadow: none;
     font-size: .8rem; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+.container {
+  border-top: 1px solid #e1e1e1;
+  background-color: #fff; }
 
 .hero {
   background: url(../../images/hero-bread.jpg) no-repeat center top;
@@ -977,60 +976,6 @@ h3 {
   .post-info-wrapper h3 a:hover {
     color: #db272a;
     text-decoration: underline; }
-
-.site-footer {
-  background-color: #222222; }
-
-.footer-block-container {
-  background-color: #222222;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  max-width: 1024px;
-  margin: 0 auto;
-  line-height: 1rem; }
-  .footer-block-container h3 {
-    color: #808080;
-    margin-bottom: .75rem;
-    text-transform: uppercase; }
-  .footer-block-container .footer-logo img {
-    width: 250px; }
-
-.contact {
-  margin: 3rem; }
-  .contact h3 {
-    margin-top: 0; }
-  .contact i {
-    font-size: 1.5rem;
-    padding-right: .5rem; }
-  .contact a {
-    text-decoration: none;
-    color: white; }
-  .contact a:visited {
-    color: white; }
-  .contact a:hover {
-    text-decoration: underline; }
-  .contact p {
-    margin-bottom: .5rem; }
-
-.business-hours {
-  margin: 3rem 0; }
-
-.copyright-container {
-  background-color: #333333;
-  color: white;
-  font-size: .8rem;
-  text-align: center;
-  padding: 1.5rem; }
-  .copyright-container p {
-    margin: 0; }
 
 .about-main-container {
   width: 1024px;
@@ -1571,3 +1516,57 @@ h2.widget-title {
   padding-left: 5%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.site-footer {
+  background-color: #222222; }
+
+.footer-block-container {
+  background-color: #222222;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  max-width: 1024px;
+  margin: 0 auto;
+  line-height: 1rem; }
+  .footer-block-container h3 {
+    color: #808080;
+    margin-bottom: .75rem;
+    text-transform: uppercase; }
+  .footer-block-container .footer-logo img {
+    width: 250px; }
+
+.contact {
+  margin: 3rem; }
+  .contact h3 {
+    margin-top: 0; }
+  .contact i {
+    font-size: 1.5rem;
+    padding-right: .5rem; }
+  .contact a {
+    text-decoration: none;
+    color: white; }
+  .contact a:visited {
+    color: white; }
+  .contact a:hover {
+    text-decoration: underline; }
+  .contact p {
+    margin-bottom: .5rem; }
+
+.business-hours {
+  margin: 3rem 0; }
+
+.copyright-container {
+  background-color: #333333;
+  color: white;
+  font-size: .8rem;
+  text-align: center;
+  padding: 1.5rem; }
+  .copyright-container p {
+    margin: 0; }
