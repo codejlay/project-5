@@ -1,6 +1,6 @@
 # Project 5 - Le Red Bread
 
-## Summary:
+**Summary:**
 
 A multipage bakery website using WordPress.
 
@@ -10,7 +10,7 @@ A multipage bakery website using WordPress.
 - Search results page and 404 page
 
 
-## Tools and methods used to build site:
+**Tools and methods used to build site:**
 
 - HTML/CSS
 - PHP
@@ -22,7 +22,7 @@ A multipage bakery website using WordPress.
 - Gulp, SASS, Browser-Sync
 
 
-## Experience from the project:
+**Experience from the project:**
 
 It was great learning to create a multi-page website with WordPress and also exposure to a CMS. WordPress has some great plugins to help you create faster like contact forms and debugging tools for troubleshooting. 
 
